@@ -15,7 +15,6 @@
 </head>
 <body>
     <!-- Шапка Страницы -->
-    <div class="container">
     <header class="header">
         <div class="header-container">
             <!-- Навигация сайта -->
@@ -36,10 +35,8 @@
             </ul>
         </div>
     </header>
-    </div>
 
 <!-- Основной материал -->
-<div class="container">
     <main class="main">
     <div class="main-first-container">
         <section class="main-first-section">
@@ -91,46 +88,78 @@
     </div>
 
     <!-- Секция наша команда -->
+<div class="container">
     <section class="team-section">
         <h2 class="team">Наша команда</h2>
         <ul class="team-list ul-li">
             <li class="team-item">
-                <img src="./images/product.jpg" alt="Игорь Демяненко" width="270">
-                <h3 class="team-title">Игорь Демяненко</h3>
-                <p class="team-text" lang="en">Product Designer</p>
+                <article class="card">
+                    <div>
+                        <img src="./images/product.jpg" alt="Игорь Демяненко" width="270">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="team-title">Игорь Демяненко</h3>
+                        <p class="team-text" lang="en">Product Designer</p>
+                    </div> 
+                </article>
             </li>
             <li class="team-item">
-                <img src="./images/developer.jpg" alt="Ольга Репина" width="270">
-                <h3 class="team-title">Ольга Репина</h3>
-                <p class="team-text" lang="en">Frontend Developer</p>
+                <article class="card">
+                    <div>
+                        <img src="./images/developer.jpg" alt="Ольга Репина" width="270">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="team-title">Ольга Репина</h3>
+                        <p class="team-text" lang="en">Frontend Developer</p>
+                    </div>
+                </article>
+                
+
             </li>
             <li class="team-item">
-                <img src="./images/marketing.jpg" alt="Николай Тарасов" width="270">
-                <h3 class="team-title">Николай Тарасов</h3>
-                <p class="team-text" lang="en">Marketing</p>
+                <article class="card">
+                    <div>
+                        <img src="./images/marketing.jpg" alt="Николай Тарасов" width="270">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="team-title">Николай Тарасов</h3>
+                        <p class="team-text" lang="en">Marketing</p>
+                    </div>
+                </article>
+
+
             </li>
             <li class="team-item">
-                <img src="./images/designer.jpg" alt="Михаил Ермаков" width="270">
-                <h3 class="team-title">Михаил Ермаков</h3>
-                <p class="team-text" lang="en">UI Designer</p>
+                <article class="card">
+                    <div>
+                        <img src="./images/designer.jpg" alt="Михаил Ермаков" width="270">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="team-title">Михаил Ермаков</h3>
+                        <p class="team-text" lang="en">UI Designer</p>
+                    </div>
+                </article>
             </li>
         </ul>
     </section>
-</main>
 </div>
+
+</main>
 <!-- footer -->
-<div class="container">
-    <footer class="footer">
-        <a href="/" class="link"> <span class="logoweb">Web</span> <span class="footer-logo">studio</span> </a>
+<footer class="footer">
+    <div class="footer-container">
+        <a href="/" class="link logo-footer"> <span class="logoweb">Web</span> <span class="footer-logo">studio</span>
+        </a>
         <address class="address-section">
             <ul class="footer-list ul-li">
                 <li><a href="/" class="footer-contact adress link"> г.Киев, пр-т Леси Украинки,26 </a></li>
                 <li><a href="tel:+380991111111" class="footer-contact link">+38 099 111 11 11</a></li>
-                <li><a href="mailto:info@example.com" title="info@example.com" class="footer-contact link"> info@example.com
+                <li><a href="mailto:info@example.com" title="info@example.com" class="footer-contact link">
+                        info@example.com
                     </a></li>
             </ul>
         </address>
-    </footer>
-</div>
+    </div>
+</footer>
 </body>
 </html>
