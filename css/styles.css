@@ -17,6 +17,9 @@ body {
   font-size: 14px;
   letter-spacing: 0.03px;
 }
+* {
+  box-sizing: border-box;
+}
 
 /* Общие стили и стили портфолио */
 /* Отмена подчеркиваний */
@@ -49,6 +52,8 @@ body {
   letter-spacing: 2%;
   color: var(--title-text-color);
   margin-right: 50px;
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
 .header-item:hover,
 .header-item:focus {
@@ -64,7 +69,9 @@ body {
   line-height: 1.7;
   letter-spacing: 2%;
   color: var(--primary-white-color);
-  margin-right: 50px;
+  margin-right: 15px;
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
 .header-contact:hover,
 .header-contact:focus {
@@ -79,6 +86,8 @@ body {
 .logo-flex {
   margin-right: 93px;
   padding-left: 215px;
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
 .header-container {
   display: flex;
@@ -96,6 +105,7 @@ body {
 }
 
 /* Позиционирование Main */
+
 .button-flex {
   display: flex;
   align-items: center;
@@ -130,6 +140,50 @@ body {
 }
 .footer-list {
   padding: 0px 0px 60px 215px;
+}
+/* Позиционирование главной страницы */
+/* Позиционирование main главной страницы */
+/* Main first */
+.main-first-container {
+  display: flex;
+  width: 1600px;
+  height: 600px;
+}
+/* main-second-container */
+.main-second-container {
+  padding: 94px 215px 94px 215px;
+}
+.main-second-list {
+  display: flex;
+  width: 1170px;
+  height: 101px;
+  align-items: center;
+  margin-right: -30px;
+}
+.main-second-item {
+  width: calc(100% / 4 - 30);
+  margin-right: 30px;
+  align-content: center;
+}
+/* main-third-container */
+.main-third-container {
+  padding: 94px 247px 94px 183px;
+  display: flex;
+}
+
+.main-third-title {
+  margin: 94px 644px 50px 580px;
+  align-content: center;
+}
+.main-third-list {
+  align-content: center;
+  display: flex;
+  margin-right: -30px;
+  padding: ;
+}
+.main-third-item {
+  width: calc(100% / 3 - 30);
+  margin-right: 30px;
 }
 
 /* Main contant */
@@ -218,6 +272,9 @@ body {
 /* Основная секция */
 .main-first-section {
   background-color: var(--black-box-color);
+  flex-grow: 1;
+  align-items: center;
+  text-align: center;
 }
 /* Заголовок */
 .chief-title {
@@ -228,6 +285,8 @@ body {
   vertical-align: top;
   color: var(--white-color);
   text-transform: uppercase;
+  margin: 200px 452px 0px 452px;
+  margin-bottom: 30px;
 }
 /* Кнопка под заголовком */
 .main-button {
@@ -239,6 +298,8 @@ body {
   background-color: var(--accent-color);
   cursor: pointer;
   font-family: inherit;
+  text-align: center;
+  margin: 0px 700px 200px 700px;
 }
 .main-button:hover,
 .main-button:focus {
@@ -295,9 +356,7 @@ body {
 /* footer идентичен портфолио */
 
 /* для ценрта кнопки основной страницы */
-.main-first-section {
-  text-align: center;
-}
+
 /* Расположение елементов */
 
 /* 
