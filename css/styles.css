@@ -40,13 +40,7 @@ img {
 
 /* Общие стили и стили портфолио */
 /* Отмена подчеркиваний */
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .link {
   text-decoration: none;
 }
@@ -206,18 +200,15 @@ img {
   margin-right: 30px;
 }
 /* Секция наша команда */
-.team-section {
-  background-color: var(--button-background);
-}
 .team {
-  padding: 94px 668px 0px 668px;
   text-align: center;
   justify-content: center;
   margin-bottom: 50px;
 }
 .team-list {
   display: flex;
-  flex-wrap: wrap;
+  padding-right: auto;
+  padding-left: auto;
   margin-top: calc(-1 * var(--size-margin-one));
   margin-left: calc(-1 * var(--size-margin-one));
 }
@@ -231,6 +222,21 @@ img {
 }
 .card {
   background-color: white;
+}
+.card-list {
+  padding: 50px 215px 94px 215px;
+}
+.card-list-title {
+  padding-top: 94px;
+}
+
+.container {
+  width: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--button-background);
 }
 
 /* Футер основная страница */
@@ -273,6 +279,12 @@ img {
 .button-item:active {
   color: var(--accent-color);
 }
+.buton {
+  display: flex;
+  padding-top: 94px;
+  padding-left: 495px;
+}
+
 /* Основной контент */
 /* Шрифты основного контента портфолио */
 .title {
