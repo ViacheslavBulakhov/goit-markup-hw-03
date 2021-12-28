@@ -51,6 +51,10 @@ img {
 }
 
 /* Общие стили и стили портфолио */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .container {
   width: 1200px;
@@ -75,8 +79,8 @@ img {
 
 .header-contacts {
   display: flex;
-  margin-left: 331px;
   align-items: center;
+  margin-left: auto;
 }
 
 .header-contact {
@@ -85,6 +89,13 @@ img {
   line-height: 1.7;
   letter-spacing: 2%;
   color: var(--primary-white-color);
+}
+
+.contact {
+  margin-right: 50px;
+}
+.contact:last-child {
+  margin-right: 0;
 }
 
 .header-list {
@@ -116,6 +127,9 @@ img {
   line-height: 1.2;
 }
 /* Ссылки навигации */
+/* .header-item:last-child {
+  margin-right: 0;
+} */
 
 .header-item {
   font-style: normal;
@@ -124,6 +138,8 @@ img {
   letter-spacing: 2%;
   color: var(--title-text-color);
   display: inline block;
+
+  margin-right: 50px;
 }
 .header-item:hover,
 .header-item:focus {
@@ -137,8 +153,6 @@ img {
 .header-contact:focus {
   color: var(--accent-color);
 }
-
-/* Позиционирование Хедер */
 
 /* ----------Позиционирование Main -------portfolio----*/
 
@@ -191,27 +205,48 @@ img {
 
 /* Позиционирование Футер */
 
-.logo-footer {
-  margin-bottom: 20px;
-}
-.footer-list {
-}
 /* Позиционирование главной страницы */
 /* Позиционирование main главной страницы */
 
-.main-second-list {
-  display: flex;
-  width: 1170px;
-  height: 101px;
+.main-second-section {
+  margin: 0 auto;
   align-items: center;
-  margin-right: -30px;
-}
-.main-second-item {
-  width: calc(100% / 4 - 30);
-  margin-right: 30px;
-  align-content: center;
 }
 
+.main-second-list {
+  display: flex;
+}
+.main-second-item {
+  margin-right: 30px;
+}
+
+.main-second-item:last-child {
+  margin-right: 0;
+}
+/* Заголовки секции */
+.main-second-title {
+  font-weight: 700;
+  line-height: 1.1;
+
+  text-transform: uppercase;
+}
+/* Текст секции */
+.main-second-text {
+  line-height: 1.7;
+  color: var(--primary-white-color);
+
+  margin-top: 10px;
+}
+
+/* Заголовок секции */
+.main-third-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+
+  padding-bottom: 50px;
+}
 .main-third-list {
   align-content: center;
   display: flex;
@@ -223,7 +258,11 @@ img {
   width: calc(100% / 3 - 30);
   margin-right: 30px;
 }
-/* -------------Секция наша команда */
+/* -------------Секция наша команда --------------*/
+.team-section {
+  background-color: var(--button-background);
+  padding-bottom: 94px;
+}
 .team {
   text-align: center;
   justify-content: center;
@@ -241,17 +280,38 @@ img {
   margin-left: var(--size-margin-one);
   margin-top: var(--size-margin-one);
 }
-.card-content {
-  padding: 30px;
+
+.team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+
+  text-align: center;
 }
+
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+
+  text-align: center;
+}
+/* Текст секции */
+.team-text {
+  font-size: 16px;
+  line-height: 1.2;
+
+  text-align: center;
+  margin-top: 10px;
+}
+
 .card {
   background-color: white;
 }
-.card-list {
-  padding: 50px 215px 94px 215px;
-}
-.card-list-title {
-  padding-top: 94px;
+
+.card-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* Футер основная страница */
@@ -325,6 +385,15 @@ img {
   font-size: 26px;
   line-height: 1.2;
 }
+.logo-footer {
+  margin-bottom: 10px;
+}
+.footer-item {
+  margin-bottom: 9px;
+}
+.footer-item:last-child {
+  margin-bottom: 0;
+}
 
 /* --------------Контактные данные футер*/
 .footer-contact {
@@ -347,10 +416,6 @@ img {
 /* -----------Хедер идентичен странице портфолио */
 
 /* ---------Основная секция------- */
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .main-first-section {
   background-color: var(--black-box-color);
@@ -396,51 +461,3 @@ img {
 }
 
 /* Секция чем мы занимаемся */
-/* Заголовки секции */
-.main-second-title {
-  font-weight: 700;
-  line-height: 1.1;
-  text-transform: uppercase;
-}
-/* Текст секции */
-.main-second-text {
-  line-height: 1.7;
-  color: var(--primary-white-color);
-
-  margin-top: 10px;
-}
-/* Заголовок секции */
-.main-third-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  vertical-align: top;
-}
-/* Секция наша команда */
-/* Основной заголовок секции */
-.team {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  vertical-align: top;
-}
-/* Заголовки блоков секции */
-.team-title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.2;
-  text-align: center;
-  vertical-align: top;
-}
-/* Текст секции */
-.team-text {
-  font-size: 16px;
-  line-height: 1.2;
-  text-align: center;
-  vertical-align: top;
-  margin-top: 10px;
-}
-
-/* footer идентичен портфолио */
